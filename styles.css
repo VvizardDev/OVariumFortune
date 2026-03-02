@@ -31,3 +31,13 @@ h1, h2, h3 {
 a {
   color: #7a4f1e;
 }
+
+/* hover and zoom */
+img {
+  border: 2px solid #c8b68a;
+  transition: transform 0.15s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
