@@ -1,22 +1,6 @@
----
-format:
-  html:
-    theme: cosmo
-    toc: true
-    toc-location: left
-    toc-depth: 3
-    code-fold: true
-    css: styles.css
-    grid:
-      sidebar-width: 300px
-    sidebar:
-      collapse-level: 1
-      pinned: false
-execute:
-  echo: true
----
+#A HISTORY OF ALBANY
 
-![Map](Map of Albany.png){fig-cap="Map of The Kingdom of Albany"}
+[![Map of Albany](Map of Albany.png){width=250px}](Map of Albany.png)
 
 **Lazioni Albany (c. 40 AN)**
 
@@ -129,7 +113,7 @@ _Edward I (r.1376-1390). Grandson of Owen Angevingia._ Popular and well beloved.
 
 _Edward II Greymantle (r.1390-1412). Eldest Son of Edward I._ Won the Long War, bringing Cauny and Angevingia back into possession of the crown and ensured peace by marrying his son Henry to the Valois princess Margot. Appointed his beloved friend and Royal Chamberlain William Duke of Waerick to Regent after falling ill. Coastal raids by Skadan and Galliwayan bands precipitated Pictish and Brydon revolts over the dereliction of the crown in its duty to protect them. Edward passed before the matter could be resolved.
 
-![Tree](AlbanyRoyalTree.png){fig-cap="Family Tree of the Kings of Albany"}
+[![Family Tree of the Kings of Albany](AlbanyRoyalTree.png){width=250px}](AlbanyRoyalTree.png)
 
 **The Outlaw King and the prelude to the Wars of the Veil (c. 1412-1417 AN)**
 
