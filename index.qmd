@@ -16,7 +16,7 @@ execute:
   echo: true
 ---
 
-![Map](MapOfAlbany.png){fig-cap="Map of The Kingdom of Albany"}
+![Map](Map of Albany.png){fig-cap="Map of The Kingdom of Albany"}
 
 **Lazioni Albany (c. 40 AN)**
 
