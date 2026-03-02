@@ -1,0 +1,33 @@
+/* parchment background */
+body {
+  background: #f5ecd8;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 6px 6px;
+  font-family: "Garamond", "Palatino Linotype", serif;
+  color: #3b2f1b;
+}
+
+/* page container */
+.quarto-container {
+  background: #f8f1df;
+  border: 1px solid #c8b68a;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  padding: 2rem;
+}
+
+/* sidebar styling */
+.sidebar {
+  background: #efe4c6;
+  border-right: 2px solid #c8b68a;
+}
+
+/* headings */
+h1, h2, h3 {
+  font-family: "Cinzel", "Garamond", serif;
+  color: #5a3b1a;
+}
+
+/* links */
+a {
+  color: #7a4f1e;
+}
