@@ -1,4 +1,4 @@
-# A HISTORY OF ALBANY
+# A History of Albany (c.40 - 1417 AN)
 
 [![Map of Albany](Map of Albany.png){width=250px style="display:block;margin-left:0"}](Map of Albany.png)
 
@@ -160,7 +160,7 @@ The ensuing wars would consume Albany on a scale not seen since the days of the 
 
 # Religion and Culture in The Kingdom of Albany c.1400 AN
 
-## FAITH
+## Faith
 
 ### Nazarene Faith
 
@@ -192,7 +192,7 @@ As befitting any faithful noble, court business across Albany seeks to be pleasi
 
 Although no noble in Albany rejects the teachings of Nazarene, it is not unheard of that independent Pictish clans in the far north still practice the ancient Gallic faith, known to some as the Old Ways. These ancient beliefs are said to pre-date the Lazio occupation, and are myriad and multifaceted in nature. Luck charms, seasonal sacrifices, and a belief in an otherworld are common themes, although local belief often varies place to place. It would be difficult or perhaps impossible to codify every local belief of the heathen Pictish, and the boundary between faith and folklore often times is equally difficult to discern.
 
-## CULTURE
+## Culture
 
 ### Culture in Albany
 
@@ -249,3 +249,6 @@ Formerly Tungringia.
 ## LYGOS
 
 ## URASHALA
+
+# Character Sheet
+[📄 Albany Character Sheet (PDF)](Albany%20Character%20Sheet.pdf)
