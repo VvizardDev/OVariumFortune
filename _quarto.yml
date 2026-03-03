@@ -9,7 +9,7 @@ format:
     theme: cosmo
     toc: true
     toc-location: left
-    toc-depth: 3
+    toc-depth: 5
     code-fold: true
     css: styles.css
     grid:
