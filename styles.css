@@ -29,25 +29,6 @@ body {
   padding: 2rem;
 }
 
-/* Ensure sidebar toggle button shows on small screens */
-@media (max-width: 768px) {
-  .toc-toggle {
-    display: block !important;
-  }
-
-  .sidebar {
-    transform: translateX(0) !important; /* show sidebar by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 999;
-    border-right: 2px solid #c8b68a;
-    background: #efe4c6; /* optional parchment color */
-    overflow-y: auto;
-  }
-}
-
 /* headings */
 h1, h2, h3 {
   font-family: "Cinzel", "Garamond", serif;
