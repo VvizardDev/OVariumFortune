@@ -16,6 +16,6 @@ format:
       sidebar-width: 300px
     sidebar:
       collapse-level: 1
-      pinned: false
+      pinned: true
 execute:
   echo: true
