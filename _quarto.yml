@@ -8,7 +8,7 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
+    toc-location: float
     toc-depth: 5
     code-fold: true
     css: styles.css
