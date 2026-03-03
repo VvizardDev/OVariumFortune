@@ -7,6 +7,22 @@ body {
   color: #3b2f1b;
 }
 
+/* Level 1 headings (#) */
+h1 {
+  text-align: center;          /* Center the heading */
+  font-size: 3em;              /* Make it bigger */
+  font-family: "Cinzel", serif; /* Optional medieval-style font */
+  color: #5a3b1a;              /* Optional color for parchment theme */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;  /* smaller on mobile */
+  }
+}
+
 /* page container */
 .quarto-container {
   background: #f8f1df;
