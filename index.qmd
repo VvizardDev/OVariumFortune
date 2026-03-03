@@ -1,34 +1,46 @@
-# A History of Albany (c.40 - 1417 AN)
+# O Varium Fortune
+
+*O varium fortune lubricum  
+Dans dubium tribunal iudicum  
+Non modicum paras huic premium  
+Quem colere tua vult gratia  
+
+Et petere rote sublimia  
+Dans dubia tamen, prepostere  
+De stercore pauperem erigens  
+De rhetore consulem eligens*
+
+## A History of Albany (c.40 - 1417 AN)
 
 [![Map of Albany](Map of Albany.png){width=250px style="display:block;margin-left:0"}](Map of Albany.png)
 
-## Lazioni Albany (c. 40 AN)
+#### Lazioni Albany (c. 40 AN)
 
 In the days of Emperor Vispario the Lazioni Empire settled and subdued the Gallic tribes across the entire island, stopping short of Cledonnia. With them they brought manuscript, roads, and later the triune Nazarene faith. Lazio rule endured for centuries until the Sacking of Lazio c. 400AN.
 
-## The Old Kingdoms (c. 400-900 AN)
+#### The Old Kingdoms (c. 400-900 AN)
 
 The era of the Old Kingdoms was largely a time of great strife and conflict. Albany was divided into four Kingdoms as follows.  
-<br/>### Pictony, in the Pictish tongue "Alba". Traditional arms are a white highland stag on a blue field.### 
+<br/>###### Pictony, in the Pictish tongue "Alba". Traditional arms are a white highland stag on a blue field.###### 
 
 The realm of Pictony, to the North and North-West, were assorted clans and kinsmen of Cledonnic stock. Having never submitted to Lazio rule they were a proud people. Although many clans swore oaths to the Pictish Laird Chief, an elected King, many of the northernmost highlanders remained independent and do so to this day.
 
-### Brydony
+###### Brydony
 in the Brydon tongue "Brydain". Traditional arms are a red dragon, the Lazio battle standard, on a green field. 
 
 The petty kingdoms of Brydony saw themselves as heirs to both Lazio and the Gallic tribes, and view their history as an unbroken heritage of those days. Centuries of infighting and invasion eroded that claim however, and by the end of the age of the Old Kingdoms Brydony only claimed dominion over the West and South-West of Albany.
 
-### Saesony
+###### Saesony
 in the Saes tongue "Saesia". Traditional arms are a blue lion on a white field, the personal arms of Aedward the Great. 
 
 The Saes were originally strong adventurer peoples hailing from the Saesonland region of Hermania. In the centuries prior to The Old Kingdoms they conquered much of the South-East, and established long-standing petty Kingdoms. Infighting slowed their progress across the land but in turn established a true Saes king in Aedward the Great, also known as Aedward the Lion.
 
-### Norskany
+###### Norskany
 in the Old Norsk tongue "Dansklaw. Traditional arms are a grey wolf, symbol of the heathen god Vodinn, on a black field. 
 
 Folklore has it that the Svene the Bloody set sail to Albany as an exile from the Kingdom of Skadansk, and was slain whilst raiding the Isle of Aida. His sons Haakon Shieldsbane and Erik Fairhair returned to Albany to avenge him, and together they conquered the entire North-East, a region still known today locally as Dansklaw.
 
-## The Quadrarchy (c. 957-1054 AN)
+#### The Quadrarchy (c. 957-1054 AN)
 
 After years of costly and ineffective wars the nobles of The Old Kingdoms had grown tired, but also fearful of foreign powers. The rulers of the four Kingdoms met together to discuss the possibility of a peaceful agreement to bind them together without bloodshed.
 
@@ -36,7 +48,7 @@ Chief Domnall Mac Rath of Pictony, Gudrod Hunter-King of Norskany, Aedmund the P
 
 This agreement led to almost a century of peace, known as the Quadrarchy, the Rule of Four.
 
-## The Great Crisis of Saesony and Norchois Invasion (c. 1055-1057 AN)
+#### The Great Crisis of Saesony and Norchois Invasion (c. 1055-1057 AN)
 
 Following the death of Aedmund's successor, Aedward the Unfaithful, his grandson Egbert took the throne only to pass without issue a year later. This left no clear successor to the throne of Saesony, as Egbert was Aedward's only legitimate son, although Aedward's many bastards remained. Two such sons, Aethelred Forkbeard and Aedgar the Bastard, rose their banners and went to war. The other Kingdoms, honouring the Quadrarchy, did nothing to intervene. It was this inaction, and a Saesony weakened by civl war, that ultimately allowed the end of the Old Kingdoms.
 
@@ -54,91 +66,91 @@ Upon hearing of the victories of the invader, Laird Chief Giric Mac Dhugall of P
 
 Nevertheless Guillaume was crowned King of Albany in the palace of Greatminster in 1057 to great fanfare, and thus began the era of Norchois rule, with Guillaume founding the House of Cauny. Fearing the might of a united Albany, Robert the Bald of Valois ordered Guillaume to be stripped of his ducal title and Cauny was absorbed into Valois. As the Unsung was too preoccupied with his new Kingdom to retaliate it was a bloodless retraction, and Guillaume would never see his home again. Over the next decades wars of consolidation and rebellion would break out, and it would not be until the reign of Guillaume's son, Reynard, that all of Brydony and Norskany would fall under Norchois rule. The far highlands of Pictony remained independent as they do to this day.
 
-## The House of Cauny (c. 1057-1179AN)
+#### The House of Cauny (c. 1057-1179AN)
 
 What follows is a brief annal of the Kings of Albany of the House of Cauny.
 
-### Guillaume I the Unsung (r. 1057-1076 AN). 
+###### Guillaume I the Unsung (r. 1057-1076 AN). 
 Conquered the Old Kingdoms and overthrew the Quadrarchy.
 
-### Reynard I (r. 1076-1089 AN). 
+###### Reynard I (r. 1076-1089 AN). 
 Eldest son of Guillaume I. Completed the Norchois conquest of Albany with protracted campaigns in Brydony and Norskany. Rebellious Norskany was quelled only by the marriage of his daughter Mathilde to the Norsk heir Rolaf.
 
-### Guillaume II the Old (r. 1089-1124 AN). 
+###### Guillaume II the Old (r. 1089-1124 AN). 
 Eldest son of Reynard I. His early rule saw many raids by seamen from Skadansk as well as Brydon rebellions. However his victories on the field brought in a relatively long era of peace and an extended reign.
 
-### Robert I the Reformer (r. 1124-1142 AN). 
+###### Robert I the Reformer (r. 1124-1142 AN). 
 Eldest son of Guillaume II. Put down the Elector's Rebellion in Pictony, which sought to enforce the Pictish succession laws upon Albany. Sensitive to the bickering cultures of Albany he reformed lawmaking and begun the development of what we now know and speak as common Saeson tongue.
 
-### Stephen I (r.1142-1143 AN). 
+###### Stephen I (r.1142-1143 AN). 
 Eldest son of Robert I. Developed consumption immediately after his coronation and died without issue after just a year of rule. A month of storms preceded his passing, widely regarded as a sign from the Gods of his unworthiness. Mass rebellions arose in Brydony midway through his short rule.
 
-### Edward I the Ironhanded (r. 1143-1165 AN). 
+###### Edward I the Ironhanded (r. 1143-1165 AN). 
 Youngest son of Guillaume II. Crowned following his nephew's disastrous reign by agreement at the Council of Rivenhall. Remembered primarily for his subjugation of the Brydon rebellions. After executing the rebel leaders he granted their titles and holdings to loyal Saes instead.
 
-### Reynard the Affable II (r.1165-1179 AN). 
+###### Reynard the Affable II (r.1165-1179 AN). 
 Eldest son of Edward I. Largely known for a relatively peaceful reign. He reformed county borders to prevent the squabbling of his vassals, and levy laws to circumvent peasant uprisings. The end of his rule was marred by the death of his heir Rolande during a hunting accident, shortly followed by his own passing. With that House of Cauny became extinct.
 
-## The Unrest (c.1179-1181 AN)
+#### The Unrest (c.1179-1181 AN)
 
 After the death of his son Reynard had named his cousin Robert the Lesser, a son of Robert I's daughter Eleanor, as heir apparent. However on his deathbed he had a change of heart and named his own daughter Isabel instead. Robert the Lesser immediately crowned himself king, but lords loyal to Eleanor rose their levies and marched on Greatminster. Civil conflict spread across the country, but neither Eleanor nor Robert had the stomach for protracted war. At the Council of Uxbridge they agreed to both cede the throne in favour of Henry of Angevingia, a descendant of Guillaume II's daughter Margerie's marriage to Gilles the Valois Duke of Angevingia. Henry accepted the crown and sailed from Valois in 1181 to establish the House of Angevingia.
 
-## The House of Angevingia (c.1181-1345 AN)
+#### The House of Angevingia (c.1181-1345 AN)
 
 What follows is a brief annal of the Kings of Albany of the House of Angevingia.
 
-### Henry I (r.1181-1199 AN). 
+###### Henry I (r.1181-1199 AN). 
 Son of Gilles II of Angevingia. Ceased his war to claim Cauny to take the throne of Albany. Henry immediately set to work reforming the law regarding feudal obligations to bring Albany's customs in line with the Kingdoms on the continent. Although many Brydon and Pictish lords postured about opposing him, he never saw any uprising against his rule.
 
-### Robert II (r.1199-1209 AN). 
+###### Robert II (r.1199-1209 AN). 
 Eldest son of Henry I. Announced his intentions to invade and reclaim Cauny upon ascension. Duke Einar of Jorvale vocally opposed the idea of foreign affairs and threatened rebellion. Robert began his war across the Jerrais Channel in Cauny, but Einar refused to send troops. Robert died in battle and was entombed back in Angevingia.
 
-### Robert III the Fortunate (r.1209-1230 AN). 
+###### Robert III the Fortunate (r.1209-1230 AN). 
 Eldest son of Robert II. Remembered as shrewder ruler than his father. Successfully occupied Cauny and granted mercy to its ruler Stefan Caux. In 1226 he announced the inheritance of Gilles II's claim to the Valois crown, beginning the Long War against King Ranulf of Valois.
 
-### Charles I (r.1230-1244 AN). 
+###### Charles I (r.1230-1244 AN). 
 Eldest son of Robert III. Ruled mostly from war camps. The campaigns in Valois preoccupied almost his entire rule. In his stead Curtis the Duke of Uxbridge was appointed to manage affairs in Albany. Died of an arbalest's bolt in 1244.
 
-### Ranulf I the Unready (r.1244-1257 AN). 
+###### Ranulf I the Unready (r.1244-1257 AN). 
 Second son of Robert III. Failed to consolidate the successes of his elder brother's campaigns and lost much territory overseas. Returned to Albany at the behest of Uxbridge to settle the disputes of Duke Harald of Jorvale, who was unhappy with his levies being overseas for years. In all but title Harald commanded every Norsk noble. Fearing rebellion, Ranulf made the perilous decision to allow Jorvale's troops leave to return home. Died of extreme stress only a few years later.
 
-### Henry II (r.1257-1271 AN). 
+###### Henry II (r.1257-1271 AN). 
 Youngest son of Robert III. Desperate to not let his father's war be lost, he threatened to strip Harald of his titles unless he returned Jorvale's levies to Valois. Harald petitioned his kinsman Tryggvi, King of Skadansk and declared independence. Henry put down the rebellion at great cost, but was unable to stop the Skadansk invasion of his holdings in Cauny.
 
-### Henry III (r.1271-1289 AN). 
+###### Henry III (r.1271-1289 AN). 
 Eldest son of Henry II. Laborious peace talks with Skadansk and Jorvale marked the start of his rule. After recapturing Cauny and stripping Harald of his titles, Henry reformed Alban law to forbid any one noble holding power, ceremonial or otherwise, over multiple duchies again.
 
-### Charles II the Temperate (r.1289-1313 AN). 
+###### Charles II the Temperate (r.1289-1313 AN). 
 Second son of Henry II. Remembered as a more measured ruler than his father or brother. His rule was notable for good stewardship and a fasterntide visit from Pontiff Rosario. Under his marshalls Albany made good progress in the Long War.
 
-### Robert IV the Disgraced (r.1313-1335 AN). 
+###### Robert IV the Disgraced (r.1313-1335 AN). 
 Eldest son of Charles II. Ultimately lost the Long War, ceding both Cauny and Angevingia to Valois. Spent the remainder of his rule attempting to restore prosperity to the Kingdom, with mixed fortune. His rule also saw The Great Turning, whereby many Pictish lords turned over from Alban rule to the independent realms of Pictony.
 
-### Robert V (r.1335-1352 AN). 
+###### Robert V (r.1335-1352 AN). 
 Eldest son of Robert IV. Alongside King Louis of Valois and Emperor Conrad of Hermania, answered the call to arms of the Holy Sees to seize the Holy City of Urashala from the heathen Moros occupiers. During this campaign he founded the Knightly Order of the of the Veil, inducting into it his closest family and companions. The costly war ultimately failed, and Albany refrained from joining future crusades.
 
-### Stephen II (r.1352-1376 AN). 
+###### Stephen II (r.1352-1376 AN). 
 Eldest son of Robert V. Last Angevingian King of Albany. Led a failed invasion of Galliway in an attempt to extort funds for the Kingdom's depleted coffers. His ship sank in the Gallic sea in a storm on the return voyage, drowning him, his advisors, and his entire family who had accompanied him, leaving Albany with no clear heir.
 
-## The Cadet Houses (c.1330 AN onwards)
+#### The Cadet Houses (c.1330 AN onwards)
 
 During Robert IV's reign his sons established cadet branches of the House of Angevingia. After Henry III's reforms certain Ducal titles were returned to the crown upon death rather than passed down via hereditary laws. Whilst Charles II appointed trusted nobles with the titles, Robert IV kept many in the family. His second son Owen was well loved as the Duke of Aberlune, and his third son Richard was gifted the title of Duke of Jorvale. These in time grew into their own Houses.
 
 After the death of Stephen II, the lords of Albany were largely in agreement that the House of Aberlune as the senior branch had the strongest claim, and so Edward of Aberlune was selected as heir at the Council of Soarcester.
 
-## The House of Aberlune (c.1376-1412)
+#### The House of Aberlune (c.1376-1412)
 
 What follows is brief annal of the Kings of Albany of the House of Aberlune.
 
-### Edward I (r.1376-1390 AN). 
+###### Edward I (r.1376-1390 AN). 
 Grandson of Owen Angevingia. Popular and well beloved. Afforded many liberties to his vassals and won great favours at court. Resumed the Long War against Valois, scoring an immediate and critical decisive victory at the Battle of Tramecourt. Died in the subsequent Battle of Cadon, which was yet still won by Alban forces.
 
-### Edward II Greymantle (r.1390-1412 AN). 
+###### Edward II Greymantle (r.1390-1412 AN). 
 Eldest Son of Edward I. Won the Long War, bringing Cauny and Angevingia back into possession of the crown and ensured peace by marrying his son Henry to the Valois princess Margot. Appointed his beloved friend and Royal Chamberlain William Duke of Waerick to Regent after falling ill. Coastal raids by Skadan and Galliwayan bands precipitated Pictish and Brydon revolts over the dereliction of the crown in its duty to protect them. Edward passed before the matter could be resolved.
 
 [![Family Tree of the Kings of Albany{width=250px style="display:block;margin-left:0"}](AlbanyRoyalTree.png){width=250px}](AlbanyRoyalTree.png)
 
-## The Outlaw King and the prelude to the Wars of the Veil (c. 1412-1417 AN)
+#### The Outlaw King and the prelude to the Wars of the Veil (c. 1412-1417 AN)
 
 After the death of Edward II his son Henry IV took the throne. Henry immediately appointed Duke John of Jorvale as Royal Chamberlain. John was a cousin to Henry, and head of the House of Jorvale. They had been educated together in Waerick at the court of Duke William alongside William's son Christopher, and were like brothers. Both too were proud members of the Order of the Veil.
 
@@ -158,11 +170,11 @@ In 1417, ahead of a small Skadan fleet, John made landfall in Skardaborough and 
 
 The ensuing wars would consume Albany on a scale not seen since the days of the Norchois Conquest. Amongst the high lords it would be known simply as "The Civil War", but, owing to the membership of both Kings in the Order of the Veil and the involvement of both Kings' wives, among the lesser nobility and peasantry it would be known as the "Wars of the Veil".
 
-# Religion and Culture in The Kingdom of Albany c.1400 AN
+## Religion and Culture in The Kingdom of Albany c.1400 AN
 
-## Faith
+#### Faith
 
-### Nazarene Faith
+###### Nazarene Faith
 
 The faith of the Alban isles since the time of Lazioni Albany is of course that of the Nazarene Church, the very calendar observed across Albany and the continent is dated to the birth of the Nazarene.
 
@@ -174,7 +186,7 @@ The Church is hierarchical, with priests loyal to a local bishop, who in turn an
 
 The True God can be referred to as singular, or in plural as Gods referring to the Trinity.
 
-### Nazarene Syncretism
+###### Nazarene Syncretism
 
 The adherents of the Nazarene faith believe it to be the successor and fulfilment of the Semaic faith observed in the Holy Land centuries before the birth of the Nazarene. Before it was unexpectedly adopted as the state faith of the Lazio Empire by Emperor Eustazio, it spread across the world by missionaries.
 
@@ -184,41 +196,41 @@ In Lazio the palace deities of Deuspeter, Diovona, and Meneva were equated as th
 
 Alongside local belief it was not uncommon for local ritual to be subsumed into the new faith, albeit this was eventually replaced by codified prayer and services. By the C10th AN most churches had adopted the modern canonical practices. Whilst the Patriarchs called councils over the centuries to establish standard church canon and practice, these syncretic rituals would still see use in certain parts of Albany, specifically in the north among Pictish and Norsk populaces. Examples include outdoors worship and bog sacrifice of valued possessions.
 
-### Faith in Court 
+###### Faith in Court 
 
 As befitting any faithful noble, court business across Albany seeks to be pleasing to the True God foremost, at least in principle if not in action. Court chaplains advise and pray for those in power, and the nobility often seek to find divine justification for their actions. The fortune of individuals often is viewed as a measure for how pleasing they are to the Gods. For example Guillaume the Unsung is considered blessed by the Gods with his successful conquest, in contrast to King Stephen I whose cursed reign was viewed as displeasing to the Trinity.
 
-### Old Ways 
+###### Old Ways 
 
 Although no noble in Albany rejects the teachings of Nazarene, it is not unheard of that independent Pictish clans in the far north still practice the ancient Gallic faith, known to some as the Old Ways. These ancient beliefs are said to pre-date the Lazio occupation, and are myriad and multifaceted in nature. Luck charms, seasonal sacrifices, and a belief in an otherworld are common themes, although local belief often varies place to place. It would be difficult or perhaps impossible to codify every local belief of the heathen Pictish, and the boundary between faith and folklore often times is equally difficult to discern.
 
-## Culture
+#### Culture
 
-### Culture in Albany
+###### Culture in Albany
 
 In the centuries since the Norchois conquest the four cultures of Albany have become more uniform under Cauny and Angevingian rule. Robert the Reformer's mission to create a common tongue has largely come to pass, with common Saeson being the standard spoken language across the land, with legal texts written in Lazioni. The exception to this is in Brydain, where the Brydon tongue persists as the common language. Local vernacular persists outside of Saesony however, with many lesser nobles and serfs speaking exclusively in their provincial manner.
 
 The influence of the Norchois and later Angevingian monarchs on the nobility of the land can be heard more than seen, with the High Saeson used in courts having many loan words and phrases from the continent. Because of the Norchois hegemony it's not uncommon for Valois culture to be seen as more kingly than the Alban cultures, although each in their own way have adopted aspects of Norchois culture.
 
-### Saesony
+###### Saesony
 
 The seat of Greatminster the capital city of Albany, the first of the four Old Kingdoms to accept the Guillaume Caux as King, and the root of modern Saeson. It is easy to see why Saes often view themselves as exceptional, and why the people in the Saes counties view their ways as the de-facto Alban way. However, moreso than the other three Old Kingdoms, Saesony took on many Norchois customs and linguistics under the House of Cauny. Customs and fashions from the continent, be they from Valois or Hermania, often found their way to Saesony first, giving the culture a sense of royal privilege. Indeed, kinship ties the Saes of Saesony to the Saes of Saesonland in Hermania from which the Saes people originated. It is not uncommon for Saes nobleness to be discussed, as opposed to the uncivil north and west. This divide is echoed in those provinces, where the Saes are oft talked about as turncoats who betrayed the Quadrarchy. Old grudges run deep, but the Saes cover them over with continental gold and Norchois opulence.
 
-### Brydain
+###### Brydain
 
 The western reaches are viewed as a backwater by other cultures, a relic of an era long gone at best and a deluded people living in the past at worst. The Brydon people are not fiercely proud in the same way as the Pictish or Norsk, but rather they hold a stoic pride. For them they are the last vestige of Lazioni Albany, protectors and stewards of ancient kingdoms left to them for a millennia now. It is rare for any Brydon to use the Saeson language as their primary tongue, instead it is used almost solely to converse with outsiders. All Brydon, common and noble alike, speak old Brydon. The handful of Norchois lords installed during the Conquest may speak Saeson in their estates, but the Norchois attempts to convert the populace from their Brydon roots failed miserably. Norchois culture did not take ahold despite its associated prestige, for Brydain claims its own prestige in the Dragon Banner of old, holding onto language and customs from the most powerful Empire in history. For this reason even the poorest Brydon lord takes pride in his holdings. Perhaps the greatest effect the Norchois had on the region was the Brydon strengthening their culture in response to their attempts to integrate them.
 
-### Dansklaw
+###### Dansklaw
 
 As the last of the Old Kingdoms to be founded, the Norsk people are perhaps the most foreign of all the cultures of Albany. Their emphasis on kin, hospitality, and martial justice sets them at odds with the southern Saes ideals of nobility, sophistication, and courtly ideals. That is not to say the Norsk do not value prosperity, however. Despite the varied quality of farmlands in the Dankslaw their historic mastery of sailing means they command the greatest fishing and overseas trading economy of any of the Old Kingdoms. Norchois influence is almost impossible to find in Dansklaw, unsurprising as it was also the last Kingdom to submit to Cauny rule, doing so only after a marriage of allegiance. Saeson is spoken amongst both the lord and serfs, albeit peppered with Old Norsk words and phrases. The perceived separation from the rest of Albany has meant many generations of Norsk nobles have felt comfortable to disregard royal decree, sometimes to their great downfall. Historic ties with the maritime empire of Skadansk also affords many Dansklaw lords with allies abroad.
 
-### Alba
+###### Alba
 
 The Pictish by far have the most complicated relationship with the rest of Albany. Formed of the clans that the Lazioni could never conquer, they avoided becoming Brydon. However the Alban Pictish later kneeled to the Norchois, barring those who would form the Independent Clans. They would prosper as part of Albany until the Great Turning in 1336 AN during Robert the Disgraced's rule, where numerous clans declared themselves independent. It is important to note this free-flowing clan loyalty, because it partly defines the Pictish. Until the Norchois Conquest they never truly had a unified kingdom as much as a representative chief agreed upon by the clans. Each clan will act independently in most matters, but not in the aggrieved manner of the Brydon or the upstart way of the Norsk. Rather the Pictish simply have never acknowledged central authority in the same way. Whilst the Brydon view themselves as heirs to an ancient culture, the Pictish simply live the reality that their Gallic ancestors did without the same level of ceremony. As such each clan may or may not have adopted some foreign customs depending on their own local opinion. The one unifying aspect of Pictish culture is there is no unifying aspect of Pictish culture. Beyond a shared Pictish dialect the clans are as varied as the holdings they inhabit.
 
-# Realms Overseas
+## Realms Overseas
 
-## Valois and Hermania
+#### Valois and Hermania
 
 After the fall of the Lazioni Empire a power vacuum emerged. Centuries later in 784 AN Theuderic Marteau established a confederacy of Franciscan kingdoms, called Martevingia, and was anointed by Pontiff Leonardo as the Emperor of Lazio. After the death of his grandson and successor, Hugues le Magnifique, it was split between Hugues' sons into three realms: Angevingia, Liguringia, and Tungringia.
 
@@ -228,27 +240,27 @@ King Bruno's descendant, Bertrand le Fort consolidated his holdings into the Kin
 
 Tungringia, whilst never reaching the full heights of power of Martevingia, continually grew as inheritances and annexations brought more lands under the rule of one crown. Saesony, After King Rudolf I acquired the crown of the Kingdom of Vitalus, and then repelled a Yugra raid, he was anointed Emperor of Lazio by Pontiff Giovanni XI, the first since Theuderic. He formalised the Empire into the Empire of Hermania, creating an elective succession and a more stable realm.
 
-## VALOIS
+#### VALOIS
 
 Formerly Angevingia and Liguringia.
 
-## HERMANIA
+#### HERMANIA
 
 Formerly Tungringia.
 
-## QURTUBAH
+#### QURTUBAH
 
-## LIVONIA
+#### LIVONIA
 
-## RUTHENIA
+#### RUTHENIA
 
-## GALLIWAY
+#### GALLIWAY
 
-## SKADANSK
+#### SKADANSK
 
-## LYGOS
+#### LYGOS
 
-## URASHALA
+#### URASHALA
 
-# Character Sheet
+## Character Sheet
 [📄 Albany Character Sheet (PDF)](Albany%20Character%20Sheet.pdf)
