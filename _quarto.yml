@@ -17,5 +17,6 @@ format:
     sidebar:
       collapse-level: 1
       pinned: true
+      show-toggle: true
 execute:
   echo: true
