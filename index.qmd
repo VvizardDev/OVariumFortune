@@ -1,4 +1,4 @@
-::: {.text-center style="font-size:3em; font-family:Cinzel, serif; color:#5a3b1a;"}
+::: {.text-center}
 # O Varium Fortune
 
 *O varium fortune lubricum*  
