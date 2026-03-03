@@ -1,4 +1,6 @@
+::: {.text-center style="font-size:3em; font-family:Cinzel, serif; color:#5a3b1a;"}
 # O Varium Fortune
+:::
 
 *O varium fortune lubricum*  
 *Dans dubium tribunal iudicum*  
@@ -262,6 +264,9 @@ Formerly Tungringia.
 
 ### Urashala
 
+## Appendices
+[📄 Coats of Arms (.docx)](Coats of Arms.docx)
+[📄 Settlements of Albany (.xlsx)](Settlements of Albany.xlsx)
 
 ## Character Sheet
 [📄 Albany Character Sheet (PDF)](Albany%20Character%20Sheet.pdf)
