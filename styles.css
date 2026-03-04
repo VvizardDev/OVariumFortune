@@ -49,3 +49,37 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+
+
+
+/* --------------------------------------------------------- */
+/* FORCE QUARTO SIDEBAR TO APPEAR ON MOBILE (NO JAVASCRIPT)  */
+/* --------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+
+  /* Make the sidebar visible and fixed */
+  .sidebar {
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 240px;              /* adjust to taste */
+    height: 100vh;
+    overflow-y: auto;
+    background: #f8f1df;       /* matches your parchment container */
+    border-right: 1px solid #c8b68a;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  /* Push main content to the right so it doesn't sit under the sidebar */
+  .content, .quarto-container {
+    margin-left: 240px !important;   /* match sidebar width */
+  }
+
+  /* Prevent Quarto from collapsing the TOC toggle */
+  .sidebar-toggle {
+    display: none !important;
+  }
+}
