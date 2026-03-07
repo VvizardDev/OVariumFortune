@@ -131,7 +131,7 @@ Second son of Henry II. Remembered as a more measured ruler than his father or b
 Eldest son of Charles II. Ultimately lost the Long War, ceding both Cauny and Angevingia to Valois. Spent the remainder of his rule attempting to restore prosperity to the Kingdom, with mixed fortune. His rule also saw The Great Turning, whereby many Pictish lords turned over from Alban rule to the independent realms of Pictony.
 
 #### Robert V (r.1335-1352 AN). 
-Eldest son of Robert IV. Alongside King Louis of Valois and Emperor Conrad of Hermania, answered the call to arms of the Holy Sees to seize the Holy City of Urashala from the heathen Moros occupiers. During this campaign he founded the Knightly Order of the of the Veil, inducting into it his closest family and companions. The costly war ultimately failed, and Albany refrained from joining future crusades.
+Eldest son of Robert IV. Alongside King Luis of Valois and Emperor Conrad of Hermania, answered the call to arms of the Holy Sees to seize the Holy City of Urashala from the heathen Moros occupiers. During this campaign he founded the Knightly Order of the of the Veil, inducting into it his closest family and companions. The costly war ultimately failed, and Albany refrained from joining future crusades.
 
 #### Stephen II (r.1352-1376 AN). 
 Eldest son of Robert V. Last Angevingian King of Albany. Led a failed invasion of Galliway in an attempt to extort funds for the Kingdom's depleted coffers. His ship sank in the Gallic sea in a storm on the return voyage, drowning him, his advisors, and his entire family who had accompanied him, leaving Albany with no clear heir.
@@ -240,12 +240,12 @@ After the fall of the Lazioni Empire a power vacuum emerged. Centuries later in 
 
 In the following century the three successor states became fractious. Eventually King Roland of Liguringia passed without issue, and so King Bruno I of Angevingia inherited the northern half of Liguringia while King Arnulf of Tungringia inherited the southern half.
 
-King Bruno's descendant, Bertrand le Fort consolidated his holdings into the Kingdom of Valois in 937 AN, codifying law, currency, and language.
+King Bruno's descendant, Luis le Fort consolidated his holdings into the Kingdom of Valois in 937 AN, codifying law, currency, and language.
 
 Tungringia, whilst never reaching the full heights of power of Martevingia, continually grew as inheritances and annexations brought more lands under the rule of one crown. After King Rudolf I acquired the crown of the Kingdom of Vitalus, and then repelled a Yugra invasion, he was anointed Emperor of Lazio by Pontiff Giovanni XI, the first since Theuderic. He formalised the Empire into the Empire of Hermania, creating an elective succession and a more stable realm.
 
 ### Kingdom of Valois
-Formerly Angevingia and Liguringia. Over the centuries has traded control of Cauny and Angevingia with the Kingdom of Albany. Its remaining holdings are mostly the traditional territories of Liguringia, in addition to the Brydon-cultured Gallois. At present the Kingdom is at peace with its longtime enemy Albany, sealed with a political marriage. Currently ruled by King Louis X.
+Formerly Angevingia and Liguringia. Over the centuries has traded control of Cauny and Angevingia with the Kingdom of Albany. Its remaining holdings are mostly the traditional territories of Liguringia, in addition to the Brydon-cultured Gallois. At present the Kingdom is at peace with its longtime enemy Albany, sealed with a political marriage. Currently ruled by King Luis X.
 
 ### Empire of Hermania
 Formerly Tungringia. King Rudolf I through diplomacy and conflict united Tungringia, Vitalus, Saesonland, Zeelandia, and Alamannia, creating the modern core of the Empire. The Empire was blessed by Pontiff Giovanni XI and is considered to be the true successor to the Lazioni Empire. Over the centuries smaller holdings have been absorbed into Hermania. The Empire is Elective, with all Prince-Electors having a ballot upon the death of the previous Emperor. Currently ruled by Emperor Sigmund.
@@ -256,16 +256,20 @@ A complex multi-cultural empire spanning the Thurvingian Peninsula and part of n
 ### Grand Kingdom of Livonia
 Founded as a personal union of the Duchy of Kernavia and Lechia, the Grand Kingdom is one of the largest realms east of Lygos. In 1385 AN, under military threat from Hermania from the west the Duke Wladyslaw of Kernavia married Queen Hedwig of Lechia, creating a formidable union that defeated Hermanian knightly orders across the next few years, securing a period of peace. Whilst most subjects of the Livonian Crown are either Nazarene or Semaic, there are many practitioners of Livonian Old Ways still persisiting. Currently ruled by Queen Anna I.
 
-### Ruthenia
+### Principality of Ruthenia
+Originally a conferedation of Norsk, Lechian, and Lechian trader states that capitalised on trade routes between Skadansk and Lygos. With the adoption of the Nazarene faith the Duchy gradually syntehsised Skadan and Lygosian culture. Over the next few centuries the Duchy repelled a series of invasions from the steppe nomad Khaluks, consolidating its military in time to repel a Hermanian conquest of the region. In the aftermath Prince Aleksiy Vsevolod laid out the charters to formalise centralised rule from the city of Slovensk. Currently ruled by Prince Dmitri I.
 
+### Petty Kingdoms of Galliway
+Much like in Alba, a fellow Gallic land, the Petty Kingdoms of Galloway are ruled by a myriad of independent clans. Bound together by common heritage and culture, the clans have never united into a single political entity. Many Petty Kings have attempted to unite the island, all of which ending in failure. Likewise any attempt by Norchois or Alban kings to take the island have also failed. Nonetheless the kinship and trade ties between Brydony, Pictony, and Galliway has meant various clans have played small parts in the history of Albany. There is no singular ruler of Galliway.
 
-### Galliway
+### Empire of Skadansk (also called Kingdom of Skadansk)
+For centuries the region of Skadansk produced influential sailors and traders which spread across the seas to influence many kingdoms and empires. The three constituent Kingdoms of Skania, Svoriki and Noregi emerged c. 500-600 AN, with each one claiming dominion over Skadansk. Many Skadan rulers both in Skadansk and abroad also claimed that title, until Harald Thunderbolt of Noregi was definitively crowned King of all three Kingdoms in 1015 AN. Ruling all mainland Skadansk, as well as smaller island holdings such as Feransk and Snaeland, the Empire is second only to Hermania, and its formidable naval power gives it disproportionate reach. Currently ruled by King Magnus Haakonsson VIII.
 
-### Skadansk
+### Empire of Lygos (also called The Lazioni Empire)
+Following the sacking of Lazio in c. 400 AN by Thurvingians the Western Protectorate of the Lazioni Empire collapsed, but the Eastern Protectorate of the Empire remained untouched. From the Eastern Capital city of Lygos Imperial rule continued. Attempts to re-establish dominance through conquest of southern Vitalus were semi-successful, but over the next millennium the once great power waned. Wars with the Parthanid Empire and internal strife eroded its power, culminating in the Holy Sees declaring Martevingia and later Hermania to be the Lazioni Empire. In 1341 AN an invasion by the Khiniks, recently converted to the Moros faith, spurred the Emperor to Adronikos to petition the Holy Sees for help. A coalition of Albany, Hermania, and Valois embarked on a vast march eastward to relieve Lygos and to battle further into the Holy Land to liberate Urashala. Though they failed in taking Urashala, they did liberate much of the Imperial territory. Today its holdings are limited to Lygos proper, Epirios, Aeolios and Hattios. Currently ruled by Emperor Eustazio XII
 
-### Lygos
-
-### Urashala
+### The City of Urashala (in the region of Palesheth)
+The seat of many ancient kingdoms, many of which Semaic, the city of Urashala is most well known as the birthplace of the Nazarene faith. According to Scripture the Incarnate was executed here by the Lazioni Empire and rose again three days later. The wider region of Palesheth has seen many different rulers since then, including a shift from Lazio rule to Lygos rule, a brief Semaic rebellion, and then invasion by the Moros Caliphate of Khattabids, succeeded by the Caliphate of Umarids, then the Caliphate of Khurasids. It briefly existed as a Crusader State in 1343 AN, before being retaken by Khurasid forces two years later. Today pilgrims and subjects of all three major faiths are offered protection under Moros law. Currently ruled by Khurasid Caliph Ahmad I.
 
 ## Appendices
 [📄 Coats of Arms (.docx)](Coats of Arms.docx)
