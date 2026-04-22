@@ -3,13 +3,27 @@ title: "Arms of Albany"
 format: html
 ---
 
-<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+```{python}
+import os
+from IPython.display import HTML, display
 
-$for(arms)$
-  <div style="text-align: center;">
-    <img src="$arms.image$" style="height: 200px;">
-    <div>$arms.title$</div>
-  </div>
-$endfor$
+folder = "arms"
 
-</div>
+svgs = sorted([f for f in os.listdir(folder) if f.endswith(".svg")])
+
+html = """
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;">
+"""
+
+for svg in svgs:
+    title = os.path.splitext(svg)[0].replace("_", " ")
+    html += f"""
+    <div style="text-align:center">
+        <img src="{folder}/{svg}" style="height:200px;">
+        <div>{title}</div>
+    </div>
+    """
+
+html += "</div>"
+
+display(HTML(html))
