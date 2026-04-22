@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <svg version="1.1"
+        baseProfile="full"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+        preserveAspectRatio="xMidYMid meet" height="600" width="500" viewBox="0,0,1000,1200 ">
+<metadata>
+<rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>This work is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+         <dc:creator>
+           <cc:Agent>
+              <dc:title>roundel/geometric - (Drawshield internal)
+heater shape - https://commons.wikimedia.org/wiki/User:MG
+</dc:title>
+           </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      </rdf:RDF>
+</metadata>
+<defs></defs><g ><g mask="url(#mask9-1)"><g><g><title>quarterly</title><desc>Division used to fill field</desc><g stroke-width="4" stroke="none" ><defs><pattern  patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" x="2" y="0" width="166.67" height="300" id="pattern7-1" >
+<g class="treatment"><g  fill="#F0F0F0"><rect x="0" y="0" width="166.67" height="300" /></g><g stroke-width="2" stroke="none" ><g  fill="#1E7FCB"><g class="treatment"><path d="M0,0 v300l83.33,-150zm166.67,0v300l-83.33,-150z"/></g></g></g></g>
+</pattern>
+</defs><g  fill="url(#pattern7-1)"><rect x='-100' y='-100' width='1200' height='1400' /></g>
+<defs><pattern  patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" x="0.5" y="0" width="333.32999" height="333.32999" id="pattern8-1" >
+<g class="treatment"><g  fill="#1E7FCB"><rect x="0" y="0" width="333.32999" height="333.32999" /></g><g stroke-width="2" stroke="none" ><g  fill="#F0F0F0"><g class="treatment">
+    <path d="M 0,166.665 H 166.665 V 0 H 0 Z M 166.665,333.3299 H 333.3299 V 166.665 H 166.665 Z"/>
+  </g></g></g></g>
+</pattern>
+</defs><g  fill="url(#pattern8-1)"><path fill-rule="evenodd" d="M500,500 v800   h-600.000   v-800.000  h600zM500,500 v-600.000  h600 v600   h-600.000  z" /></g></g></g><g transform='translate(0,0)'><g  fill="#EFD807"><g class="PlaceCharge" transform=" translate(90,70) scale(0.28, 0.28) " >
+<title>five roundels</title><g  fill-rule="evenodd" stroke="#696969" stroke-width="3" ><circle cx="250" cy="250" r="250"  />
+</g>
+</g>
+</g><g  fill="#EFD807"><g class="PlaceCharge" transform=" translate(770,70) scale(0.28, 0.28) " >
+<title>five roundels</title><g  fill-rule="evenodd" stroke="#696969" stroke-width="3" ><circle cx="250" cy="250" r="250"  />
+</g>
+</g>
+</g><g  fill="#EFD807"><g class="PlaceCharge" transform=" translate(790,550) scale(0.28, 0.28) " >
+<title>five roundels</title><g  fill-rule="evenodd" stroke="#696969" stroke-width="3" ><circle cx="250" cy="250" r="250"  />
+</g>
+</g>
+</g><g  fill="#EFD807"><g class="PlaceCharge" transform=" translate(430,1000) scale(0.28, 0.28) " >
+<title>five roundels</title><g  fill-rule="evenodd" stroke="#696969" stroke-width="3" ><circle cx="250" cy="250" r="250"  />
+</g>
+</g>
+</g><g  fill="#EFD807"><g class="PlaceCharge" transform=" translate(60,550) scale(0.28, 0.28) " >
+<title>five roundels</title><g  fill-rule="evenodd" stroke="#696969" stroke-width="3" ><circle cx="250" cy="250" r="250"  />
+</g>
+</g>
+</g></g></g></g><defs><mask id="mask9-1" >
+<path fill="#FFFFFF" d="m 0,0 v 800 c -2.5063876,43.11115 1.2341419,84.33503 21.489586,125.13639 20.255443,40.80137 53.477613,79.98631 98.039434,115.63581 44.56181,35.6494 100.44867,67.7517 164.92346,94.7345 64.47479,26.9828 137.51639,48.8374 215.54752,64.4933 78.03113,-15.6559 151.07273,-37.5105 215.54752,-64.4933 64.47479,-26.9828 120.36165,-59.0851 164.92346,-94.7345 44.56182,-35.6495 77.78399,-74.83444 98.03943,-115.63581 C 998.76586,884.33503 1000.1453,841.93063 1000,800 V 0 Z" />
+</mask>
+</defs></g></svg>
