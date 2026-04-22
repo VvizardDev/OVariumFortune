@@ -273,6 +273,7 @@ The seat of many ancient kingdoms, many of which Semaic, the city of Urashala is
 
 ## Appendices
 [📄 Coats of Arms (.docx)](Coats of Arms.docx)
+[📄 Coats of Arms (experimental)](arms.qmd)
 
 [📄 Settlements of Albany (.xlsx)](Settlements of Albany.xlsx)
 
