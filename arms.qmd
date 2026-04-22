@@ -1,12 +1,14 @@
 ---
-title: "City Armorial"
+title: "Arms of Albany"
 listing:
   id: arms-grid
-  contents: "arms/*.svg" # Points to your folder
+  contents: 
+    - "arms/*.svg"
   type: grid
   grid-columns: 5
-  sort: "filename"
-  image-height: "150px"
+  fields: [title, image] # This tells Quarto to show the title and the image
+  sort: "title"
+  image-height: "200px"
 ---
 
 :::{#arms-grid}
