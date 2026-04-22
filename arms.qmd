@@ -17,6 +17,7 @@ html = """
 
 for svg in svgs:
     title = os.path.splitext(svg)[0].replace("_", " ")
+
     html += f"""
     <div style="text-align:center">
         <img src="{folder}/{svg}" style="height:200px;">
@@ -27,3 +28,4 @@ for svg in svgs:
 html += "</div>"
 
 display(HTML(html))
+```
