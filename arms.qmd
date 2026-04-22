@@ -12,7 +12,7 @@ folder = "arms"
 svgs = sorted([f for f in os.listdir(folder) if f.endswith(".svg")])
 
 html = """
-<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
 """
 
 for svg in svgs:
