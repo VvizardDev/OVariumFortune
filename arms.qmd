@@ -1,15 +1,13 @@
 ---
 title: "Arms of Albany"
-listing:
-  id: arms-grid
-  contents: 
-    - "arms/*.svg"
-  type: grid
-  grid-columns: 5
-  fields: [title, image] # This tells Quarto to show the title and the image
-  sort: "title"
-  image-height: "200px"
 ---
 
-:::{#arms-grid}
-:::
+::: {.grid style="grid-template-columns: repeat(5, 1fr); gap: 1rem;"}
+
+```{=html}
+{{< for item in site.data.arms >}}
+  <div style="text-align: center;">
+    <img src="{{ item.image }}" style="height: 200px;">
+    <div>{{ item.title }}</div>
+  </div>
+{{< endfor >}}
