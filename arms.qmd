@@ -1,16 +1,15 @@
 ---
 title: "Arms of Albany"
+format: html
 ---
 
-```{=html}
-{{< $data := site.Data | default dict >}}
-{{< $arms := (readFile "arms/arms.yaml" | transform.Unmarshal) >}}
-
 <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
-{{ range $arms }}
+
+$for(arms)$
   <div style="text-align: center;">
-    <img src="{{ .image }}" style="height: 200px;">
-    <div>{{ .title }}</div>
+    <img src="$arms.image$" style="height: 200px;">
+    <div>$arms.title$</div>
   </div>
-{{ end }}
+$endfor$
+
 </div>
