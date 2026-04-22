@@ -1,8 +1,9 @@
 ---
-title: "City Armorial"
+title: "Albany Armorial"
 format: 
   html:
     page-layout: full
+engine: knitr
 ---
 
 ::: {layout-ncol=5}
