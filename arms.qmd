@@ -1,0 +1,30 @@
+---
+title: "City Armorial"
+format: 
+  html:
+    page-layout: full
+---
+
+::: {layout-ncol=5}
+
+```{python}
+#| echo: false
+#| output: asis
+import os
+
+# Ensure this matches your folder name exactly (case-sensitive on GitHub!)
+arms_dir = "arms"
+
+if os.path.exists(arms_dir):
+    # Get only SVG files
+    images = sorted([f for f in os.listdir(arms_dir) if f.endswith('.svg')])
+    
+    for img in images:
+        # Turn "new_york.svg" into "New York"
+        caption = img.replace('.svg', '').replace('_', ' ').title()
+        print(f"![{caption}]({arms_dir}/{img})")
+else:
+    print("Arms folder not found.")
+```
+
+:::
