@@ -8,24 +8,87 @@ import os
 from IPython.display import HTML, display
 
 folder = "arms"
-
 svgs = sorted([f for f in os.listdir(folder) if f.endswith(".svg")])
 
 html = """
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  height: 200px;
+  transition: transform 0.2s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+</style>
+
+<div class="gallery">
 """
 
 for svg in svgs:
     title = os.path.splitext(svg)[0].replace("_", " ")
+    path = f"{folder}/{svg}"
 
     html += f"""
-    <div style="text-align:center">
-        <img src="{folder}/{svg}" style="height:200px;">
+    <div class="card" onclick="openLightbox('{path}')">
+        <img src="{path}">
         <div>{title}</div>
     </div>
     """
 
-html += "</div>"
+html += """
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.getElementById('lightbox-img').src = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === "Escape") closeLightbox();
+});
+</script>
+"""
 
 display(HTML(html))
 ```
