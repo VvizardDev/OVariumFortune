@@ -42,7 +42,7 @@ for _, row in df.iterrows():
     hierarchy[row["Old Kingdom"]][row["Duchy"]][row["County"]].append(row)
 
 def svg_path(city):
-    return f"arms/{city.replace(' ', '_')}.svg"
+    return f"arms/{city.replace(' ', '_').replace('-', '')}.svg"
 
 html = """
 <style>
