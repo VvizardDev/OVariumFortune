@@ -3,6 +3,7 @@ title: "Arms of Albany"
 format:
   html:
     code-tools: false
+    code-fold: false
 ---
 
 ```{python}
