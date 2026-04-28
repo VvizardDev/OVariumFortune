@@ -1,18 +1,42 @@
 ---
 title: "Arms of Albany"
-format: html
+format:
+  html:
+    code-tools: false
 ---
 
 ```{python}
-import os
+import pandas as pd
+from collections import defaultdict
 from IPython.display import HTML, display
 
-folder = "arms"
-svgs = sorted([f for f in os.listdir(folder) if f.endswith(".svg")])
+# load local Excel file
+df = pd.read_excel("Settlements of Albany.xlsx", sheet_name="Sheet1")
 
+# forward-fill hierarchy
+df["Old Kingdom"] = df["Old Kingdom"].ffill()
+df["Duchy"] = df["Duchy"].ffill()
+df["County"] = df["County"].ffill()
+
+# keep only rows with cities
+df = df[df["City"].notna()]
+
+# build hierarchy
+hierarchy = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+
+for _, row in df.iterrows():
+    hierarchy[row["Old Kingdom"]][row["Duchy"]][row["County"]].append(row)
+
+# helper for SVG path
+def svg_path(city):
+    return f"arms/{city.replace(' ', '_')}.svg"
+
+# HTML output
 html = """
 <style>
-.gallery {
+body { font-family: sans-serif; }
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
@@ -24,7 +48,7 @@ html = """
 }
 
 .card img {
-  height: 200px;
+  height: 150px;
   transition: transform 0.2s ease;
 }
 
@@ -32,7 +56,15 @@ html = """
   transform: scale(1.05);
 }
 
-/* Lightbox */
+.meta {
+  font-size: 0.8rem;
+}
+
+h1 { margin-top: 2rem; }
+h2 { margin-top: 1.5rem; }
+h3 { margin-top: 1rem; }
+
+/* lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -51,24 +83,37 @@ html = """
   max-height: 90%;
 }
 </style>
-
-<div class="gallery">
 """
 
-for svg in svgs:
-    title = os.path.splitext(svg)[0].replace("_", " ")
-    path = f"{folder}/{svg}"
+# build page
+for kingdom, duchies in hierarchy.items():
+    html += f"<h1>{kingdom}</h1>"
 
-    html += f"""
-    <div class="card" onclick="openLightbox('{path}')">
-        <img src="{path}">
-        <div>{title}</div>
-    </div>
-    """
+    for duchy, counties in duchies.items():
+        html += f"<h2>{duchy}</h2>"
 
+        for county, cities in counties.items():
+            html += f"<h3>{county}</h3><div class='grid'>"
+
+            for c in cities:
+                city = c["City"]
+                lord = c.get("Lord", "") or "&nbsp;"
+                arms = c.get("Arms", "") or "&nbsp;"
+                img = svg_path(city)
+
+                html += f"""
+                <div class="card" onclick="openLightbox('{img}')">
+                    <img src="{img}" onerror="this.style.display='none'">
+                    <div><strong>{city}</strong></div>
+                    <div class="meta">{lord}</div>
+                    <div class="meta">{arms}</div>
+                </div>
+                """
+
+            html += "</div>"
+
+# lightbox
 html += """
-</div>
-
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <img id="lightbox-img">
 </div>
