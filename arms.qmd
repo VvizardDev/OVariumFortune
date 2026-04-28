@@ -2,19 +2,7 @@
 title: "Arms of Albany"
 format:
   html:
-    theme: cosmo
-    toc: true
-    toc-location: left
-    toc-depth: 5
-    code-fold: true
     code-tools: false
-    css: styles.css
-    grid:
-      sidebar-width: 300px
-    sidebar:
-      collapse-level: 1
-      pinned: true
-      show-toggle: true
 ---
 
 ```{python}
