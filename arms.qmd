@@ -130,8 +130,14 @@ for kingdom, duchies in hierarchy.items():
 
             for c in cities:
                 city = c["City"]
-                lord = c.get("Lord", "") or "&nbsp;"
-                city_arms = c.get("Arms", "") or "&nbsp;"
+                lord = c.get("Lord", "")
+                city_arms = c.get("Arms", "")
+                
+                lord = "" if pd.isna(lord) else lord
+                city_arms = "" if pd.isna(city_arms) else city_arms
+                
+                lord = lord if lord != "" else "&nbsp;"
+                city_arms = city_arms if city_arms != "" else "&nbsp;"
                 img = svg_path(city)
 
                 html += f"""
