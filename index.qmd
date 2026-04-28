@@ -272,7 +272,7 @@ Following the sacking of Lazio in c. 400 AN by Thurvingians the Western Protecto
 The seat of many ancient kingdoms, many of which Semaic, the city of Urashala is most well known as the birthplace of the Nazarene faith. According to Scripture the Incarnate was executed here by the Lazioni Empire and rose again three days later. The wider region of Palesheth has seen many different rulers since then, including a shift from Lazio rule to Lygos rule, a brief Semaic rebellion, and then invasion by the Moros Caliphate of Khattabids, succeeded by the Caliphate of Umarids, then the Caliphate of Khurasids. It briefly existed as a Crusader State in 1343 AN, before being retaken by Khurasid forces two years later. Today pilgrims and subjects of all three major faiths are offered protection under Moros law. Currently ruled by Khurasid Caliph Ahmad I.
 
 ## Appendices
-[📄 Coats of Arms (experimental)](arms.qmd)
+[📄 Coats of Arms presented at the Royal Tournament at Northome, 1417 AN](arms.qmd)
 
 [📄 Settlements of Albany (.xlsx)](Settlements of Albany.xlsx)
 
