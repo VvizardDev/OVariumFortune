@@ -30,7 +30,7 @@ jobs:
       - name: Install Python + Jupyter deps
         run: |
           python -m pip install --upgrade pip
-          pip install pyyaml ipykernel nbformat jupyter
+          pip install pyyaml ipykernel nbformat jupyter pandas openpyxl 
       
       - name: Register Jupyter kernel
         run: |
