@@ -10,36 +10,60 @@ import pandas as pd
 from collections import defaultdict
 from IPython.display import HTML, display
 
-# load local Excel file
+# load local file
 df = pd.read_excel("Settlements of Albany.xlsx", sheet_name="Sheet1")
 
-# forward-fill hierarchy
+# forward-fill hierarchy columns
 df["Old Kingdom"] = df["Old Kingdom"].ffill()
 df["Duchy"] = df["Duchy"].ffill()
+df["Duke"] = df["Duke"].ffill()
+df["Ducal Arms"] = df["Ducal Arms"].ffill()
 df["County"] = df["County"].ffill()
 
-# keep only rows with cities
+# keep only valid city rows
 df = df[df["City"].notna()]
 
-# build hierarchy
+# hierarchy structure
 hierarchy = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
 
 for _, row in df.iterrows():
     hierarchy[row["Old Kingdom"]][row["Duchy"]][row["County"]].append(row)
 
-# helper for SVG path
 def svg_path(city):
     return f"arms/{city.replace(' ', '_')}.svg"
 
-# HTML output
 html = """
 <style>
 body { font-family: sans-serif; }
+
+.kingdom { margin-top: 2rem; }
+
+.duchy {
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.duchy-header {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.duchy-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.duchy-sub {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -59,10 +83,6 @@ body { font-family: sans-serif; }
 .meta {
   font-size: 0.8rem;
 }
-
-h1 { margin-top: 2rem; }
-h2 { margin-top: 1.5rem; }
-h3 { margin-top: 1rem; }
 
 /* lightbox */
 .lightbox {
@@ -87,10 +107,23 @@ h3 { margin-top: 1rem; }
 
 # build page
 for kingdom, duchies in hierarchy.items():
-    html += f"<h1>{kingdom}</h1>"
+    html += f"<div class='kingdom'><h1>{kingdom}</h1>"
 
     for duchy, counties in duchies.items():
-        html += f"<h2>{duchy}</h2>"
+
+        # pull metadata from first row in duchy
+        sample_row = next(iter(next(iter(counties.values()))))
+        duke = sample_row.get("Duke", "") or ""
+        arms = sample_row.get("Ducal Arms", "") or ""
+
+        html += f"""
+        <div class="duchy">
+            <div class="duchy-header">
+                <div class="duchy-title">{duchy}</div>
+                <div class="duchy-sub"><strong>{duke}</strong></div>
+                <div class="duchy-sub">{arms}</div>
+            </div>
+        """
 
         for county, cities in counties.items():
             html += f"<h3>{county}</h3><div class='grid'>"
@@ -98,7 +131,7 @@ for kingdom, duchies in hierarchy.items():
             for c in cities:
                 city = c["City"]
                 lord = c.get("Lord", "") or "&nbsp;"
-                arms = c.get("Arms", "") or "&nbsp;"
+                city_arms = c.get("Arms", "") or "&nbsp;"
                 img = svg_path(city)
 
                 html += f"""
@@ -106,11 +139,13 @@ for kingdom, duchies in hierarchy.items():
                     <img src="{img}" onerror="this.style.display='none'">
                     <div><strong>{city}</strong></div>
                     <div class="meta">{lord}</div>
-                    <div class="meta">{arms}</div>
+                    <div class="meta">{city_arms}</div>
                 </div>
                 """
 
             html += "</div>"
+
+        html += "</div>"
 
 # lightbox
 html += """
