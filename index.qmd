@@ -274,6 +274,8 @@ The seat of many ancient kingdoms, many of which Semaic, the city of Urashala is
 ## Appendices
 [📄 Coats of Arms presented at the Royal Tournament at Northome, 1417 AN](arms.qmd)
 
+[📄 Great Officers of State and Knights of the Veil 1417AN](government.qmd)
+
 <!--# [📄 Settlements of Albany (.xlsx)](Settlements of Albany.xlsx) -->
 
 [📄 House of Cadwallader (.docx)](https://docs.google.com/document/d/1N1waZvAK6NhpEYnBXLiIkluPld7rQUXTmTxw4UTalYk/edit?usp=sharing)
