@@ -58,8 +58,7 @@ h4::after {
   content: "";
   display: inline-block;
 
-  width: 1em;
-  height: 1em;
+  height: 3em;
 
   margin-left: 0.5em;
 
