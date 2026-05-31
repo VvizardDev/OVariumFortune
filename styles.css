@@ -49,26 +49,3 @@ img {
 img:hover {
   transform: scale(1.05);
 }
-
-/* heading marginalia */
-h1::after,
-h2::after,
-h3::after,
-h4::after {
-  content: "";
-  display: inline-block;
-
-  height: 3em;
-
-  margin-left: 0.5em;
-
-  background-image: url("margins/margin3.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  opacity: 0.9;
-  filter: sepia(0.2) contrast(1.1);
-
-  transform: translateY(-0.15em);
-}
