@@ -49,3 +49,25 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+
+/* heading marginalia */
+h1::after,
+h2::after,
+h3::after,
+h4::after {
+  content: "margins/margin3";
+  display: inline-block;
+
+  height: 1em;
+  margin-left: 0.5em;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.9;
+  filter: sepia(0.2) contrast(1.1);
+
+  /* ✨ KEY LINE: lift icon above baseline */
+  transform: translateY(-0.15em);
+}
