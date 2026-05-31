@@ -55,12 +55,15 @@ h1::after,
 h2::after,
 h3::after,
 h4::after {
-  content: url("margins/margin3.png");
+  content: "";
   display: inline-block;
 
+  width: 1em;
   height: 1em;
+
   margin-left: 0.5em;
 
+  background-image: url("margins/margin3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,6 +71,5 @@ h4::after {
   opacity: 0.9;
   filter: sepia(0.2) contrast(1.1);
 
-  /* ✨ KEY LINE: lift icon above baseline */
   transform: translateY(-0.15em);
 }
