@@ -55,7 +55,7 @@ h1::after,
 h2::after,
 h3::after,
 h4::after {
-  content: margins/margin3.png;
+  content: url("margins/margin3.png");
   display: inline-block;
 
   height: 1em;
