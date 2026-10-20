@@ -1,0 +1,449 @@
+---
+title: "Map of Albany"
+page-layout: full
+toc: false
+include-in-header:
+  text: |
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+---
+
+```{=html}
+<style>
+  #albany-wrap { display:flex; gap:12px; height:78vh; min-height:480px; }
+  #albany-side { width:250px; flex:none; display:flex; flex-direction:column; gap:8px; font-size:.9rem; }
+  #albany-side input[type=search] { width:100%; padding:6px 8px; box-sizing:border-box; }
+  #albany-list { flex:1; overflow-y:auto; border:1px solid #8884; border-radius:4px; margin:0; padding:0; list-style:none; }
+  #albany-list li { padding:4px 8px; cursor:pointer; display:flex; align-items:center; gap:6px; }
+  #albany-list li:hover { background:#8882; }
+  #albany-list li.sel { background:#c9a22744; font-weight:600; }
+  #albany-list li.off { opacity:.55; }
+  #albany-list img { width:18px; height:18px; object-fit:contain; flex:none; }
+  #albany-list small { opacity:.65; margin-left:auto; }
+  #albany-map { flex:1; min-width:0; background:#d9d2c0; border-radius:4px; }
+  #albany-edit { display:none; gap:6px; flex-wrap:wrap; }
+  #albany-edit button { padding:4px 8px; }
+  #albany-status { font-size:.8rem; opacity:.75; }
+
+  /* arms medallions */
+  .pin { position:absolute; left:0; top:0; width:calc(var(--s) * var(--k)); height:calc(var(--s) * var(--k));
+         transform:translate(-50%,-50%); border-radius:50%; background:#f6f0df; border:2px solid var(--c);
+         box-shadow:0 1px 4px #0006; box-sizing:border-box; transition:transform .12s; }
+  .pin img { width:100%; height:100%; object-fit:contain; padding:14%; box-sizing:border-box; display:block; }
+  .pin.noimg { background:var(--c); }
+  .leaflet-marker-icon:hover .pin { transform:translate(-50%,-50%) scale(1.25); }
+  .pin.cap { border-width:3px; }
+
+  /* hover card */
+  .albany-tip { display:flex; gap:10px; align-items:flex-start; max-width:320px; white-space:normal; padding:2px; }
+  .albany-tip img { width:64px; height:64px; object-fit:contain; flex:none; }
+  .albany-tip b { font-size:1.05rem; }
+  .albany-tip .bl { font-style:italic; opacity:.85; }
+  .albany-tip .where { font-size:.8rem; opacity:.65; margin-top:3px; }
+  .leaflet-tooltip.albany { border:1px solid #6b5a2e; background:#fbf7ea; color:#2a2418; }
+
+  @media (max-width:700px) { #albany-wrap { flex-direction:column-reverse; height:auto; }
+    #albany-map { height:65vh; } #albany-list { max-height:180px; } #albany-side { width:auto; } }
+</style>
+
+<div id="albany-wrap">
+  <div id="albany-side">
+    <input type="search" id="albany-search" placeholder="Search places or rulers">
+    <div id="albany-edit">
+      <button id="e-copy">Copy data</button>
+      <button id="e-save">Download</button>
+      <button id="e-reset">Clear draft</button>
+    </div>
+    <div id="albany-status"></div>
+    <ul id="albany-list"></ul>
+  </div>
+  <div id="albany-map"></div>
+</div>
+
+<script type="text/plain" id="albany-data">
+# PICTONY
+## LAIRD CHIEF OF LOTHBURN | Laird Murdoch MacNab | azure, a stag rampant argent
+### LOTHBURN
+DUN EIDYNN|Laird Chief Murdoch MacNab|or a yale rampant gules, tressure gules||59.8|37.33
+Kilrymont||||61.39|32.95
+Rathais||||59.23|34.24
+Dun Pharlain|Chief Ralf Pharlain|checky or and sable, a griffin passant gules||57.81|35.76
+Ecclesbrith||||56.9|36.76
+Carneluk||||56.79|37.81
+Inbhirleith|Chief Morris MacPharlain|vert, a pantheon rampant or||59.91|38.33
+Dun Barra|Chief Angus Barra|azure, a savage head vert||63.15|36.62
+Selsbrith|Chief John MacFulchiane|or, three stags lodged azure||61.22|39.76
+Lockardsby|Chief William Ogill|azure, three trees vert||58.43|41.0
+### AYR
+AYR|Laird James Buchane|azure, three roundels sable||48.55|42.86
+Cairnryan||||46.56|45.29
+Dun Patrick|Chief Giles Patrick|||45.77|47.86
+Tynron Doon||orly gules and or||53.21|44.48
+Dun Douglas|Chief Robert Douglad|argent, three hearts gules||54.17|46.33
+Dun Drennan|Chief Angus Drennan|azure, a gorge vert||53.61|48.33
+### LANARK
+GARSCADDEN|Laird Robert MacNakill|shepherd check sable and vert||50.54|37.57
+Marnock||||50.71|38.71
+Leargaidh||||47.59|39.33
+Craoibh||||53.49|33.0
+Dun Bhlathain|Chief Fergus Bhlathain|shepherd check or and vert||52.75|35.24
+Pitloch Atholl|Chief Giles Atholl|shepherd check gules and vert||53.95|30.43
+Chatnaich||||45.6|30.48
+### MORVERN
+BREADHAIG|Laird Alan Erskyn|azure, a triskele vert||46.0|40.52
+Inbhirora||||46.68|34.29
+Bhoid||||46.68|38.1
+Dun Cambel|Chief Gawter Campbell|orly vert and azure||42.99|41.81
+### CAIRNWATH
+DUN DEAGH|Laird Neil MacMartane|azure, an elk trippant argent||60.19|32.0
+Sgain||glen check azure and or||58.32|32.48
+Ghlinn Sidh||azure, 7 annulets concentric sable||58.04|29.86
+Aghaidh Mhor||||53.09|26.29
+Dunn Kiliwhimin|Chief Gylmyne Kiliwhimin|glen check azure and vert||49.46|25.43
+### INBHIRNESS
+INBHIRNESS|Laird James Forster|houndstooth gules and vert||53.44|21.48
+Narann|Chief Amer Ross|houndstooth gules and azure||56.62|20.05
+Thulnain|Chief Thomas MacIne|gules, three annulets interlaced vert||56.73|23.52
+### DHEATHAIN
+INBHIRDHEATH|Laird Davy Wardoon|tartan gules and sable||66.16|25.0
+Dun Fraser|Chief Sym Fraser|tartan azure and vert||66.44|19.81
+Duniness|Chief Andrew Lumbard|tartan or and gules||65.53|26.95
+Bhrothaig||||63.32|30.9
+
+# BRYDONY
+## DUCHY OF ABERLUNE | King Henry of Aberlune | or, a dog courant gules
+### ABERLUNE
+ABERLUNE|Earl Charles of Aberlune|or, a dog courant gules||61.84|55.29
+Caerferes||||57.52|45.52
+Caerllweydd||||60.48|47.67
+Rigg||||59.97|50.48
+Harbwr Gwyn|Mayor Arwyn ap Trefor|vert, ford, three trefoils argent in fess||55.99|51.38
+Trefoffeiriad||||61.84|59.1
+Manceinion|Baron William Glyn|gules, two bends or, a dog-head-collared-couped gules||63.94|61.05
+### TEYRNLLWG
+DEVERDOEU|Earl Hywel Bevan|azure, seven crosses couped in annulo or, a dragon head much smaller caboshed gules||60.65|63.95
+Penbedw|Sir Hywel Vaughan|vert, two dragon heads couped gules respecting each other||60.19|62.76
+Gwrexham||||60.48|66.29
+Pengwern|Earl Tomos ap Arwyn|erminois, a dragon rampant sable||61.67|68.0
+Llanllieni|Earl Dafydd Llewelyn|gules, a rosary or above a lion dormant argent||64.79|71.43
+Rheradr||||58.66|73.05
+Buellt||||62.24|75.24
+Caerguiragon||||65.87|73.71
+Henffordd||||65.7|74.76
+Caerblaidd|Earl Gareth Beausire|ermine, two wolves reguardant sable combatant||67.97|67.71
+Glanfa Llyffant||||66.72|66.33
+### LLYN
+CYNWY|Earl Caradog Conway|sable, a dragon couchant argent||54.17|63.43
+Cor Gybi||||48.95|63.48
+Caereustace||||50.71|65.05
+Pen Maelor|Baron Rhun ap Madoc|vert, ford, in sinister side a dragon rampant gules and in dexter side a sea dragon gules||52.58|71.05
+Aberteifi||||50.65|74.19
+### VANNIN
+CONNAGHYN||||50.43|54.29
+Malew||||49.06|55.48
+## DUCHY OF BRYCHEINIOG | Gruffudd Sant-Ioan | vert, a dragon rampant gules
+### BRYCHEINIOG
+CAERTADD|Duke Gruffudd Sant-Ioan|vert, a dragon displayed gules||59.34|81.48
+Pont Myrddin|Earl Cyndeyrn Wyllt|azure, a dragon in annulo gules||46.0|77.95
+Mortdunum||||49.97|78.71
+Abertyui||||53.04|80.33
+Wysg||||60.42|80.86
+Bryn-y-Beddau||quarterly vert and argent, in each quarter 3 annulets interlaced countercharged|BrynyBeddau.svg|58.21|78.81
+Trefgofannon||||60.76|77.9
+### CRYCHBEORH
+ABONA|Earl Marc ap Rhodri|gules, ford, a bend argent, a dragon's head or||61.04|82.05
+Ty Cerrig||||64.17|79.57
+Caerloyw|Sir Teyrnon Loyw|rosace vert and or, a gauntlet argent en soleil much smaller||65.08|78.81
+Treffynnon|Sir Tomos ap Terwyn|azure, chevron engrailed or, two doves argent legged or armed gules beaked gules above an oak tree vert||66.16|77.95
+Corinium||||66.55|80.29
+Dyrh|Earl Cadeyrn Cynwrig|per fess embattled, azure and gules, a pitcher or||64.74|82.76
+Bryn-y-Moch|||BrynyMoch.svg|67.86|81.67
+Rhydychen||||72.69|80.9
+Durnovara|Sir Bryn ap Rhys|quarterly gules and azure, a cross or||64.91|88.71
+Caer Morglawdd|Earl Ieuan Gulliver|sable, ford, three gauntlet argent in fess||64.34|90.57
+Croesi Arth|Sir Arthur ap Llwyd|sable, a bear carrying a cross argent||68.31|89.43
+Hen Sarum|Earl Owain ap Ieuan Gradawc|vert, a stone circle argent||69.62|86.29
+### WYTH
+NANT-Y-BRENIN|Earl Rhodri Gwinwr|per fess argent and azure, A chalice or, motto of "Er Cof Amdanof I"|NANTYBRENIN.svg|73.2|89.52
+Gwinwr||||73.82|90.33
+### DYFNAINT
+ABERISKA|Earl Llwelyn ap Owain o'r Gaer|party per barry wavy gules and azure, a castle or, supporters pegasus Segreant argent and dragon rampant gules||56.79|89.52
+Ynys Wydr||||61.33|85.38
+Treftone|Baron Margon Flynn|gules, bend dovetailed azure, a dragon head erased or||59.51|86.52
+Gifl||||62.35|87.29
+Rhyddrwg||||51.9|84.38
+Trefvenydh||||47.02|89.57
+Llangurroc||||45.77|90.86
+Tairafon|Sir Owain Wynne|sable, bend argent, in bend three dragon heads or||44.46|94.14
+Pensanctaidd|Bishop Dafydd|argent a mitre or above a dragon's head or||40.6|95.1
+Abertamari||||51.33|92.71
+### SCYLLAN
+PORTHENNOR|Earl Emrys Cadwallader|quarterly gules and vert, an inescutcheon sable, overall a dragon rampant or||34.92|96.9
+Skaw|Sir Huw Tresco|azure, in chief fess invected or, in chief three elder blossoms argent in fess||34.7|96.43
+
+# NORSKANY
+## DUCHY OF JORVALE | John of Jorvale | azure, a boar argent
+### DUNHELM
+DUNHELM|Earl Harold Thirkell|sable, a cross vert, four wolves rampant argent combatant||69.96|48.05
+Wallsend||||69.68|46.95
+Morgate||||69.22|45.0
+Alawyk||||69.51|43.05
+Aida|Abbott Cuthbert|argent, ford, a cross or||68.31|39.81
+Byggwyk|Baron Gunther Sjorefur|vert, ford, a sea-fox guardant argent above a longship or||66.78|38.9
+Jetborough||||63.66|40.71
+### JORVALE
+JORVALE|Earl Richard of Jorvale|azure, a boar argent||74.16|56.76
+Horgrsgate|Earl Ralph Ormsby|barry bowed vert and argent, a boars head caboshed or||71.78|55.57
+Rypon||||70.58|54.05
+Loidis|Baron Thomas Hammond|mullety of 10 azure and or, a wolf rampant argent||71.49|58.05
+Breidford||||70.36|58.71
+Raudmarsh|Baron Thurston Gill|barry wavy gules and azure, a wolf rampant gules||72.97|50.19
+Hvitby|Abbott Hildred|barry wavy azure and argent, in fess three croziers vert above a mitre or||77.06|51.43
+Skardaborough|Earl Eric Sandgate|sable, ford, a tower argent above a ship or||78.42|53.62
+Bjorrton|Sir Gunter Foss|per fess azure and barry wavy azure and argent, in chief a beaver or||78.65|57.86
+Wyke|Mayor Hardwin Gunn|sable, a chevron ploye ermine, three wolf's heads argent||79.33|58.95
+### LINDIS
+LINDIS|Bishop Thomas|per fess gules and argent, in first quarter a virgin argent and in second quarter a paschal lamb argent banner or and a mitre gules smaller||73.82|65.33
+Torksey||||77.74|62.9
+Konigsby|Mayor Randel Piers|barry indented one in the other vert and or||80.24|64.76
+Gegnesborough|Baron Wolfstan Thwaite|quarterly 1st and 4th, papelonny vert and argent, 2nd and 3rd, paly sable and or a falcon striking argent||77.46|62.19
+Gransthrop||||76.43|66.71
+Stamborough||lozengy vert and sable, a quarter vert, in first quarter a badger head erased argent||76.89|68.48
+Duansborough||||74.67|61.0
+Skumasthorp|Sir Henry Umber|barry wavy vert and or, three wheat sheafs or||78.19|60.1
+Vodinnswyk|Mayor Ranulf Rawlinsson|sable, ford, a raven or||81.6|60.95
+Skaggisness|Sir Wymond Raven|per bend sinister azure and sable, three cranes argent legged or beaked gules||84.33|65.19
+Skirbeck||||81.32|66.33
+### DEORABY
+DEORABY|Earl Osmond Sanderson|fretty vert and argent, two ash trees eradicated or above a stag lodged reguardant or||68.26|65.48
+Notingborough|Mayor Ronald Beck|checky vert and argent, an ash trees eradicated or||70.76|64.19
+
+# SAESONY
+## DUCHY OF WAERICK | William FitzAlan | per bend mullety of 10 or and gules and maily azure and or, in dexter side a bear rampant argent
+### WAERICK
+WAERICK|Duke William FitzAlan|per bend mullety of 10 or and gules and maily azure and or, in dexter side a bear rampant argent||71.44|73.0
+Arbury||||71.44|71.81
+Soarcester|Earl Simon Stannard|argent, four cinquefoils gules arranged two one one||70.81|69.71
+Middleton||||74.96|70.67
+Corby||||77.23|71.38
+Huntaton|Earl Edmund Ansell|checky vert and sable, a bow with arrow nocked or||78.25|72.24
+Thraepston||||78.14|73.29
+Kingsbrook||||77.06|75.1
+Laminton|Baron Robert Tyrrell|fretty sable and gules, a quarter ermine||72.12|76.05
+Silverton||||72.57|77.67
+Blaecaly||||76.49|77.43
+### UXBRIDGE
+UXBRIDGE|Earl Robert Daubenay|per pale embattled argent and azure, an ox gules||83.3|72.38
+Gildenborough||||79.1|69.29
+Isly||||83.42|68.52
+Roiton||||82.79|73.48
+### NORDFOLC
+NORWYK|Earl Robert Lund|per pale ermine and gules, in second quarter a wolf sejant, in fourth quarter a ship argent||91.2|69.57
+Lunn||||85.92|67.67
+Vodinnsmere|Sir Giles Faramond|per fess vert and estencely azure and vert, three ravens sable||89.61|66.29
+Yarm||||94.26|68.52
+Theoford||||88.19|70.81
+### BABERGH
+GYPPESWYK|Earl Everard Nivett|per chevron gules and lozengy azure and argent, in chief a sun or, a sunburst or||90.12|75.05
+Dunwyk||||94.04|72.57
+Saesmond|Sir Edward Godwin|per chausse fretty azure and argent and argent, a fish embowed or||93.47|73.9
+Aedmondsbury|Sir Lionel Siward|per pale fretty argent and azure and argent, in sinister side a lion rampant azure||84.89|74.57
+## DUCHY OF HAMETONSHIRE | Walter de Hameton | per chevron vairy argent and azure and papelonny gules and or, on a sun or a horse rampant sable
+### TAMISIA
+CELMFORD|Earl Henry Harding|argent three bars wavy azure on a Chief indented lozengy gules and azure a lion head argent couped between two stars argent||84.89|77.9
+Rivenhall|Earl Robert Hylton|per saltire checky azure argent, crusilly sable or, three moon decrescent argent||81.37|76.71
+Nivenhall|Earl William "Wakeful" Hylton|quarterly checky azure argent, crusilly sable or, three moon increscent argent||87.85|76.95
+Southminster|Archbishop Peter|per pile argent and azure, a mitre azure between two anchors or, in base a book closed or leaved argent clasped vert garnished gules||90.06|77.95
+Hiccin||||77.68|78.76
+Waecia|Sir Charles Bonet|azure seme de teardrop argent, a lightning bolt or||78.42|80.38
+Boerthaldon||||85.35|79.48
+Canvey||||88.47|80.0
+### HAMETONSHIRE
+NORTHOME|Duke Walter de Hameton|per fess arched gules and vert, enty in point argent, in fess a castle triple towered much smaller argent, between in base two horses respectant sable larger||76.21|81.76
+Marlbury||per fess arched fretty azure and gules, vert||74.84|84.05
+Avesbury|Sir Dafydd Strangeway|sable, a dolmen argent||71.44|83.1
+Silford||per fess sable and fretty argent and or, two fleeces argent above a lion couchant azure||77.8|85.48
+Winford|Bishop Richard|per fess argent and checky azure and argent, a mitre vert surrounded by two angels kneeling attired or respecting each other||74.84|86.43
+Southome|Earl Alisaunder de Hameton|per fess argent and gules, in chief two Dog Courant Collared gules and in base a boar passant argent. Supporters lymphad||73.08|87.76
+### HAESTASHIRE
+GREATMINSTER|Lord Mayor Nicholas Downes|per pale chequy argent and azure and lozengy argent and azure, a fess azure charged with three bells or, in chief a crown or and in base a tower argent.||82.74|82.0
+Elmbridge||mullety of 10 azure and argent, a tree or leafed vert||81.89|80.57
+Tandridge||quarterly lozengy argent and azure and mullety of 10 sable and or||79.9|81.24
+Windle||||79.67|82.52
+Redhill|Sir Edwin Norton|per fess gules and papelonny azure and argent||81.32|83.38
+Crowly||||81.32|85.57
+Hedgeward|Sir Bernard Dacre|per fess wavy vert and azure, a sword argent above three trees vert||80.24|86.19
+Harhenhall|Earl Thomas Falstaff|quartered, first quarter checky of 9 argent and azure, second quarter maily sable and or, third quarter maily sable and or, fourth quarter checky of 9 argent and gules, over all the quarters crancelin or||79.67|86.95
+Haesta|Sir Frederick de Jerrais|lozengy argent and azure, a knight mounted sable armoured argent maned argent caparisoned or, unguled or||86.31|87.71
+### CANTIA
+CANTIABURY|Earl Richard Cantmont|quarterly estencely azure and argent and roundelly argent and azure, three lions rampant or||90.18|83.24
+Dourmouth||||92.56|84.48
+Cotystone||||88.42|82.62
+Bridgeton||argent, a fess vert and a quarter vert||86.66|83.9
+Speldhall|Sir Russell Foley|per fess vert and lozengy vert and argent, a label of five or, a fox head erased much smaller gules||86.2|85.81
+Wealderton|Earl Gerard Lovell|per chief throughout azure and argent, a sea-lion gules above seven oak trees vert||87.79|86.52
+Mootburne||||87.79|87.29
+</script>
+
+<script>
+(() => {
+  // ---- settings -----------------------------------------------------------
+  const MAP_IMG = 'Map%20of%20Albany.png';
+  const ARMS    = 'arms/';                    // folder containing the .svg files
+  const EDIT    = new URLSearchParams(location.search).has('edit');
+  const DRAFT   = 'albany-map-draft-v1';
+  const REALM_COLOUR = { PICTONY:'#2f6aa3', BRYDONY:'#b3392f', NORSKANY:'#6a4c93', SAESONY:'#2e7d4f' };
+
+  // ---- data ---------------------------------------------------------------
+  function parse(text) {
+    const rows = []; let realm = '', duchy = '', county = '';
+    for (let line of text.split('\n')) {
+      line = line.trim();
+      if (!line || line.startsWith('//')) continue;
+      const h = line.match(/^(#{1,3})\s*(.*)$/);
+      if (h) {
+        const [title, ruler = '', blazon = ''] = h[2].split('|').map(s => s.trim());
+        const lvl = h[1].length;
+        if (lvl === 1) { realm = title; duchy = county = ''; }
+        else if (lvl === 2) { duchy = title; county = ''; }
+        else county = title;
+        rows.push({ h: lvl, title, ruler, blazon });
+        continue;
+      }
+      const [name, ruler = '', blazon = '', file = '', x = '', y = ''] = line.split('|').map(s => s.trim());
+      rows.push({ name, ruler, blazon, file, realm, duchy, county,
+                  x: x === '' ? null : +x, y: y === '' ? null : +y });
+    }
+    return rows;
+  }
+  function serialise(rows) {
+    return rows.map(r => r.h
+      ? '#'.repeat(r.h) + ' ' + [r.title, r.ruler, r.blazon].join('|').replace(/\|+$/, '')
+      : [r.name, r.ruler, r.blazon, r.file, r.x ?? '', r.y ?? ''].join('|').replace(/\|+$/, '')
+    ).join('\n').replace(/\n(# )/g, '\n\n$1') + '\n';
+  }
+  const armsUrl = e => ARMS + (e.file || e.name.replace(/ /g, '_') + '.svg');
+  const isCapital = e => /[A-Z]/.test(e.name) && e.name === e.name.toUpperCase();
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // ---- start --------------------------------------------------------------
+  const img = new Image();
+  const imgReady = new Promise((ok, bad) => { img.onload = ok; img.onerror = bad; });
+  img.src = MAP_IMG;
+  Promise.all([document.getElementById('albany-data').textContent, imgReady])
+    .then(([text]) => init(parse(text)))
+    .catch(err => { document.getElementById('albany-status').textContent = 'Could not load the map image'; });
+
+  function init(rows) {
+    const W = img.naturalWidth, H = img.naturalHeight;
+    const places = rows.filter(r => !r.h);
+    const key = p => p.county + '/' + p.name;
+
+    if (EDIT) {                                   // draft positions override the file in edit mode
+      try {
+        const d = JSON.parse(localStorage.getItem(DRAFT) || '{}');
+        places.forEach(p => { if (d[key(p)]) [p.x, p.y] = d[key(p)]; });
+      } catch (e) {}
+      document.getElementById('albany-edit').style.display = 'flex';
+    }
+    const saveDraft = () => {
+      try { localStorage.setItem(DRAFT, JSON.stringify(Object.fromEntries(
+        places.filter(p => p.x != null).map(p => [key(p), [p.x, p.y]])))); } catch (e) {}
+    };
+
+    const map = L.map('albany-map', { crs: L.CRS.Simple, zoomSnap: .25, zoomDelta: .5,
+      wheelPxPerZoomLevel: 100, attributionControl: false, minZoom: -10, maxZoom: 10 });
+    const bounds = [[0, 0], [H, W]];
+    L.imageOverlay(MAP_IMG, bounds).addTo(map);
+    const fit = map.getBoundsZoom(bounds);
+    map.setMinZoom(fit - 1); map.setMaxZoom(fit + 4);
+    map.setView([H / 2, W / 2], fit);
+    map.setMaxBounds(L.latLngBounds(bounds).pad(.3));
+    const mapEl = document.getElementById('albany-map');
+
+    const toLL = p => L.latLng(H * (1 - p.y / 100), W * p.x / 100);
+    const fromLL = ll => ({ x: +(ll.lng / W * 100).toFixed(2), y: +((1 - ll.lat / H) * 100).toFixed(2) });
+
+    let size = 20;
+    function resize() {
+      size = Math.max(14, Math.min(90, 20 * Math.pow(1.45, map.getZoom() - fit)));
+      mapEl.style.setProperty('--s', size + 'px');
+      places.forEach(p => {
+        if (p.m) p.m.getTooltip().options.offset = L.point(0, -size * (isCapital(p) ? .75 : .5) - 4);
+      });
+    }
+    map.on('zoom', resize);
+
+    function tipHtml(p) {
+      return `<div class="albany-tip"><img src="${armsUrl(p)}" alt="" onerror="this.remove()">
+        <div><b>${esc(p.name)}</b><br>${p.ruler ? esc(p.ruler) : '<span style="opacity:.55">Ruler not recorded</span>'}
+        ${p.blazon ? `<div class="bl">${esc(p.blazon)}</div>` : ''}
+        <div class="where">${[p.county, p.duchy, p.realm].filter(Boolean).map(esc).join(' · ')}</div></div></div>`;
+    }
+
+    function addMarker(p) {
+      const col = REALM_COLOUR[p.realm] || '#555';
+      const icon = L.divIcon({ className: '', iconSize: [0, 0],
+        html: `<div class="pin ${isCapital(p) ? 'cap' : ''}" style="--c:${col};--k:${isCapital(p) ? 1.5 : 1}">
+               <img src="${armsUrl(p)}" alt="" onerror="this.parentNode.classList.add('noimg');this.remove()"></div>` });
+      p.m = L.marker(toLL(p), { icon, draggable: EDIT, keyboard: false, riseOnHover: true })
+        .bindTooltip(tipHtml(p), { className: 'albany', direction: 'top', opacity: 1 })
+        .addTo(map);
+      p.m.on('dragend', () => { Object.assign(p, fromLL(p.m.getLatLng())); saveDraft(); refresh(); });
+    }
+    places.forEach(p => { if (p.x != null) addMarker(p); });
+    resize();
+
+    // ---- sidebar ----------------------------------------------------------
+    const listEl = document.getElementById('albany-list'), search = document.getElementById('albany-search');
+    const status = document.getElementById('albany-status');
+    let sel = null;
+    function refresh() {
+      const q = search.value.trim().toLowerCase();
+      listEl.innerHTML = '';
+      places.filter(p => !q || (p.name + p.ruler + p.county).toLowerCase().includes(q)).forEach(p => {
+        const li = document.createElement('li');
+        li.className = (p === sel ? 'sel ' : '') + (p.x == null && !EDIT ? 'off' : '');
+        li.innerHTML = `<img src="${armsUrl(p)}" alt="" onerror="this.style.visibility='hidden'">
+                        <span>${esc(p.name)}</span><small>${p.x == null ? (EDIT ? 'unplaced' : '') : esc(p.county)}</small>`;
+        li.onclick = () => {
+          if (EDIT) { sel = p; refresh(); if (p.m) map.panTo(p.m.getLatLng()); return; }
+          if (p.m) { map.flyTo(p.m.getLatLng(), Math.max(map.getZoom(), fit + 2), { duration: .6 }); p.m.openTooltip(); }
+        };
+        listEl.appendChild(li);
+      });
+      const n = places.filter(p => p.x != null).length;
+      status.textContent = EDIT
+        ? `${n} of ${places.length} placed. Pick a place in the list, then click the map to put it there. Drag a marker to adjust.`
+        : (n < places.length ? `${n} of ${places.length} places mapped so far.` : '');
+    }
+    search.oninput = refresh;
+    refresh();
+
+    // ---- edit mode --------------------------------------------------------
+    if (EDIT) {
+      map.on('click', ev => {
+        if (!sel) return;
+        Object.assign(sel, fromLL(ev.latlng));
+        if (sel.m) sel.m.setLatLng(toLL(sel)); else { addMarker(sel); resize(); }
+        saveDraft();
+        const i = places.indexOf(sel);
+        sel = places.slice(i + 1).find(p => p.x == null) || places.find(p => p.x == null) || null;
+        refresh();
+      });
+      const data = () => serialise(rows);
+      document.getElementById('e-copy').onclick = () =>
+        navigator.clipboard.writeText(data()).then(() => status.textContent = 'Copied. Paste over the contents of the albany-data block in map.qmd.');
+      document.getElementById('e-save').onclick = () => {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([data()], { type: 'text/plain' }));
+        a.download = 'locations.txt'; a.click();
+      };
+      document.getElementById('e-reset').onclick = () => {
+        if (confirm('Clear the saved draft and reload?')) { localStorage.removeItem(DRAFT); location.reload(); }
+      };
+    }
+  }
+})();
+</script>
+```
