@@ -27,12 +27,10 @@ include-in-header:
 
   /* arms medallions */
   .pin { position:absolute; left:0; top:0; width:calc(var(--s) * var(--k)); height:calc(var(--s) * var(--k));
-         transform:translate(-50%,-50%); border-radius:50%; background:#f6f0df; border:2px solid var(--c);
-         box-shadow:0 1px 4px #0006; box-sizing:border-box; transition:transform .12s; }
-  .pin img { width:100%; height:100%; object-fit:contain; padding:14%; box-sizing:border-box; display:block; }
-  .pin.noimg { background:var(--c); }
-  .leaflet-marker-icon:hover .pin { transform:translate(-50%,-50%) scale(1.25); }
-  .pin.cap { border-width:3px; }
+       transform:translate(-50%,-50%); transition:transform .12s; }
+.pin img { width:100%; height:100%; object-fit:contain; display:block;
+           filter:drop-shadow(0 1px 2px #000a); }
+.pin.noimg { background:var(--c); border-radius:50%; }
 
   /* hover card */
   .albany-tip { display:flex; gap:10px; align-items:flex-start; max-width:320px; white-space:normal; padding:2px; }
